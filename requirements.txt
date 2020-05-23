@@ -1,0 +1,2 @@
+git+https://github.com/Better-Turnip-Exchange/BTE-REST-API.git
+discord
