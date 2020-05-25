@@ -1,0 +1,1 @@
+worker: bte-bot.py
