@@ -1,1 +1,1 @@
-worker: bte-bot.py
+worker: python bte-bot.py
