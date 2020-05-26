@@ -86,6 +86,8 @@ async def turnip_search_command(message, client, args):
         keywords = args[1:]
         villager = bte_api.villager()
         villager.villager_id = message.author.name
+        if keywords[0] == "N/A":
+            keywords = []
         villager.keywords = keywords
         villager.price_threshold = price
         await bte_api.create_villager(villager)
