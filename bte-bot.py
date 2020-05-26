@@ -97,6 +97,10 @@ async def turnip_search_command(message, client, args):
             for island in response["islands_visited"]
         ]
         resp_msg = "\n".join(resp_msg)
+        print(
+            message.author,
+            " issued BTE request\nargs: {}\nbte_api.main_driver:{}".format(args, response),
+        )
         if len(resp_msg) > 0:
             return "\n🎈🌴🌴🎈\nHere are your islands\n{}\n🎈🌴🌴🎈".format(resp_msg)
         else:
